@@ -5,5 +5,11 @@ So, inscriptions are not something complex or advanced; on the contrary, they ar
   
 But, the EVM (Ethereum Virtual Machine) supports smart contracts. So, if it's just for FOMO (Fear Of Missing Out), why should we still participate in such a primitive game? Moreover, once all the inscriptions on the EVM are engraved, there is no market, no liquidity, and no market maker. The subsequent development all depends on fate, and many people will end up wasting their gas to exchange for a pile of worthless paper.
 
+According to the first principles, I have identified the essence of inscriptions and understood why people appreciate them. Is there a better practice? Yes! We all know that Tokens are the ultimate form of inscriptions. Therefore, by combining the characteristics of inscriptions with ERC20 tokens, we can create a new way of token distribution. Similar to the process of engraving inscriptions, this approach allows us to achieve fairness and decentralization, just like inscriptions. Additionally, we can benefit from the well-established infrastructure on the EVM (Ethereum Virtual Machine) and have valuable initial liquidity. This will be a great innovation!  
 
-According to the first principles, I have identified the essence of inscriptions and understood why people appreciate them. Is there a better practice? Yes! We all know that Tokens are the ultimate form of inscriptions. Therefore, by combining the characteristics of inscriptions with ERC20 tokens, we can create a new way of token distribution. Similar to the process of engraving inscriptions, this approach allows us to achieve fairness and decentralization, just like inscriptions. Additionally, we can benefit from the well-established infrastructure on the EVM (Ethereum Virtual Machine) and have valuable initial liquidity. This will be a great innovation!
+Live on BNB Chain.  
+##### $FAIR Contract: 0xb2Ee388BA25E1db122D0f12eCc9d5CA0e045A95d  
+##### FAirdrop Contract: 0xd45f35D17F67FdFd9f73a9cd248A16a8A38f683C  
+##### TotalSupply: 21000000000000 (15000000000000 mintable and 6000000000000 LP)  
+###### Transfer 0.002BNB to FAirdrop Contract address to drop 100000000 $FAIR.  
+###### All BNB is automatically added to liquidity and LP is destroyed without any manual intervention, so the contract is just a platform, and no one can control the amount of BNB and $FAIR tokens. The tokens are initially non-transferable, and once the airdrop is complete, token transfers will be enabled.
