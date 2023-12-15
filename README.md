@@ -13,4 +13,5 @@ Live on opBNB Chain.
 ##### Fairdrop Contract: TBD  
 ##### TotalSupply: TBD (TBD mintable and TBD LP)  
 ##### Each liquidity addition: TBD.  
+##### Telegram Group (FairBuild): https://t.me/+2VGp9p27JMhkMzRl
 ###### Every mint operation automatically adds liquidity and burns LP, with no tokens held in reserve, so the contract is just a platform, and no one can control the amount of BNB and tokens. The tokens are initially non-transferable, and once the drop is complete, token transfers will be enabled.
