@@ -20,7 +20,7 @@ interface IPancakeRouter01 {
     ) external payable returns (uint amountToken, uint amountETH, uint liquidity);
 }
 
-contract FAirdrop {
+contract FairDrop {
     address public owner;
     address public FAIR;
     address public constant panckeRouterAddress = 0x10ED43C718714eb63d5aA57B78B54704E256024E;
