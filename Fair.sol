@@ -2,8 +2,8 @@
 pragma solidity ^0.8.18;
 
 contract Fair {
-    string private _name = "FAirdrop";
-    string private _symbol = "FAIR";
+    string private _name = "待定";
+    string private _symbol = "待定";
     uint8 private _decimals = 18;
     uint256 private _taxRate;
     uint256 private _totalSupply;
@@ -38,7 +38,7 @@ contract Fair {
         _admin = msg.sender;
         _vault = vault;
         _taxRate = rate;
-        _mint(msg.sender, 21000000000000 * 10 ** 18);
+        _mint(msg.sender, 待定 * 10 ** 18);
     }
 
     modifier onlyAdmin {
