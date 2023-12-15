@@ -30,11 +30,11 @@ contract FairDrop {
     uint256 public totalDroped;
     uint256 public threshold;
 
-    uint256 private constant _value = 0.002 * 10**18;
-    uint256 private constant _singleAmount = 100000000 * 10 ** 18; 
-    uint256 private constant _deployAmount = 40000000 * 10 ** 18;
-    uint256 private constant _poolAmount = 6000000000000 * 10 ** 18; 
-    uint256 private constant _mintableAmount = 15000000000000 * 10 ** 18;
+    uint256 private constant _value = TBD * 10**18;
+    uint256 private constant _singleAmount = TBD * 10 ** 18; 
+    uint256 private constant _deployAmount = TBD * 10 ** 18;
+    uint256 private constant _poolAmount = TBD * 10 ** 18; 
+    uint256 private constant _mintableAmount = TBD * 10 ** 18;
     
     constructor(address _fair) {
         owner = msg.sender;
@@ -72,7 +72,7 @@ contract FairDrop {
 
         ++totalDroped;
         ++threshold;
-        if (totalDroped == 1 || totalDroped % 300 == 0) {
+        if (totalDroped == 1 || totalDroped % TBD == 0) {
             _deployLiquidity(_deployAmount * threshold);
         }
 
