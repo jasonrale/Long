@@ -8,6 +8,7 @@ But, the EVM (Ethereum Virtual Machine) supports smart contracts. So, if it's ju
 According to the first principles, I have identified the essence of inscriptions and understood why people appreciate them. Is there a better practice? Yes! We all know that Tokens are the ultimate form of inscriptions. Therefore, by combining the characteristics of inscriptions with ERC20 tokens, we can create a new way of token distribution. Similar to the process of engraving inscriptions, this approach allows us to achieve fairness and decentralization, just like inscriptions. Additionally, we can benefit from the well-established infrastructure on the EVM (Ethereum Virtual Machine) and have valuable initial liquidity. This will be a great innovation!  
 
 Live on opBNB Chain.  
+##### 🐉Go long, don’t go short!!!🐉
 ##### 🐉Go Long To The Moon!!!🐉
 ##### TOKEN Name: LONG
 ##### TOKEN Contract: 0xe36421615E1cE70F8a6b9356d92A96C748560772 (Open Source)
