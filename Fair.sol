@@ -1,20 +1,24 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-contract Fair {
-    string private _name = "TBD";
-    string private _symbol = "TBD";
+/**
+ * Go🐉Long🐉To The Moon!!!
+ */
+contract Long {
+    string private _name = "Long";  
+    string private _symbol = "LONG";    
     uint8 private _decimals = 18;
-    uint256 private _taxRate;
+    uint256 private _taxRate; 
     uint256 private _totalSupply;
 
     mapping(address account => uint256) private _balances;
     mapping(address account => mapping(address spender => uint256)) private _allowances;
-    mapping(address => bool) private _tempList; // Only For FairDrop Contract.
-
-    address private _admin;
-    address private _vault;
-    bool private _isTransferable;   // Enable after droping is completed.
+    mapping(address => bool) private _taxList; // Only For Pool Contract.
+ 
+    address private _auth;
+    address private _inscriber;
+    address private _vault;         // 0.5%，Community operations, marketing, and subsequent development.
+    bool private _isTransferable;   // Enable after inscribing is completed.
 
     event Transfer(address indexed from, address indexed to, uint256 value);
 
@@ -35,14 +39,14 @@ contract Fair {
     error TransferNotStart();
 
     constructor(address vault, uint8 rate) {
-        _admin = msg.sender;
+        _auth = msg.sender;
         _vault = vault;
         _taxRate = rate;
-        _mint(msg.sender, TBD * 10 ** 18);
+        _mint(msg.sender, 21000000 * 10 ** 18);
     }
 
-    modifier onlyAdmin {
-        require(msg.sender == _admin, "Not admin");
+    modifier onlyAuth {
+        require(msg.sender == _auth, "Permission denied");
         _;
     }
 
@@ -82,31 +86,34 @@ contract Fair {
         return _isTransferable;
     }
 
-    function admin() external view returns (address) {
-        return _admin;
+    function auth() external view returns (address) {
+        return _auth;
     }
 
-    // After droping is completed, will be transfered to Black Hole.
-    function transferAdmin(address adminAddress) external onlyAdmin() {
-        _admin = adminAddress;
+    function authorize(address authAddress) external onlyAuth() {
+        _auth = authAddress;
     }
 
-    // After droping is completed.(Only can enable)
-    function _enableTransfer() external onlyAdmin {
-        _isTransferable = true;
+    function setTransferable(bool isTransferable) external {
+        require(msg.sender == _inscriber || msg.sender == _auth, "Permission denied");
+        _isTransferable = isTransferable;
     }
 
-    function setVault(address vault) external onlyAdmin {
+    function setInscriber(address inscriber) external onlyAuth {
+        _inscriber = inscriber;
+    }
+
+    function setVault(address vault) external onlyAuth {
         _vault = vault;
     }
 
-    function setTaxRate(uint8 rate) external onlyAdmin {
-        require(rate <= 100, "Tax rate overflow");
+    function setTaxRate(uint8 rate) external onlyAuth {
+        require(rate <= 10, "Tax rate overflow");
         _taxRate = rate;
     }
 
-    function updateTempList(address account, bool isTemp) external onlyAdmin {
-        _tempList[account] = isTemp;
+    function updateTaxList(address account, bool isTax) external onlyAuth {
+        _taxList[account] = isTax;
     }
 
     function transfer(address to, uint256 value) public returns (bool) {
@@ -140,13 +147,13 @@ contract Fair {
             revert ERC20InvalidReceiver(address(0));
         }
 
-        if (_isTransferable || _tempList[from]) {
-            if (_taxRate == 0 || _tempList[from]) {
-                _update(from, to, value);
-            } else {
-                uint256 taxAmount = value * _taxRate / 100;
+        if (_isTransferable || from == _inscriber) {
+            if (_taxRate != 0 && (_taxList[from] || _taxList[to])) {
+                uint256 taxAmount = value * _taxRate / 1000;
                 _update(from, to, value - taxAmount);
                 _update(from, _vault, taxAmount);
+            } else {
+                _update(from, to, value);
             }
         } else {
             revert TransferNotStart();
@@ -179,7 +186,6 @@ contract Fair {
         emit Transfer(from, to, value);
     }
 
-    // _mint only occurs once during initialization.
     function _mint(address account, uint256 value) internal {
         if (account == address(0)) {
             revert ERC20InvalidReceiver(address(0));
