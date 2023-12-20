@@ -10,8 +10,8 @@ According to the first principles, I have identified the essence of inscriptions
 Live on opBNB Chain.  
 ##### 🐉Go long, don’t go short!!!🐉
 ##### 🐉Go Long To The Moon!!!🐉
-##### TOKEN Name: LONG
-##### TOKEN Contract: 0xe36421615E1cE70F8a6b9356d92A96C748560772 (Open Source)
+##### Token Name: LONG
+##### Token Contract: 0xe36421615E1cE70F8a6b9356d92A96C748560772 (Open Source)
 ##### LongInscriber Contract: 0x658c3941eae10398da5456951cdaf795984d106b (Open Source)
 ##### TotalSupply: 21000000 (12500000 mintable and 8500000 LP)
 ##### Each liquidity addition: 0.00025 BNB.
