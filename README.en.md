@@ -19,3 +19,4 @@ Live on opBNB Chain.
 ##### Every 2500 inscribe, the contract will automatically add liquidity and destroy LP tokens. This process will be repeated a total of 5000 times.
 ##### Telegram Group (FairBuild): https://t.me/+2VGp9p27JMhkMzRl
 ###### Every mint operation automatically adds liquidity and burns LP, with no tokens held in reserve, so the contract is just a platform, and no one can control the amount of BNB and tokens. The tokens are initially non-transferable, and once the inscribe is complete, token transfers will be enabled.
+###### Batch Script: https://github.com/jasonrale/multiLongInscriber
