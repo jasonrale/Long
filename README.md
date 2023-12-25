@@ -18,6 +18,7 @@
 #### 每次增加流动性：0.00025 BNB。
 #### 转账0.00025BNB到LongInscriber合约：0x4360B2EaA89a88C09B684E6bf4b8569ff624572C，即可铭刻铸造。如果铭刻失败，请将Gas Limit调整为60,000或以上。
 #### 每记入 2500 个，合约就会自动增加流动性并销毁 LP 代币。这个过程总共会重复5000次。
-#### 电报群（FairBuild）：https://t.me/+2VGp9p27JMhkMzRl
+#### 电报群：https://t.me/+2VGp9p27JMhkMzRl
+#### 推特：https://twitter.com/mnlonn
 ###### 每次铸币操作都会自动增加流动性并销毁 LP，没有储备任何代币，因此合约只是一个平台，没有人可以控制 BNB 和代币的数量。代币最初是不可转让的，一旦刻录完成，代币转让将被启用。
 ###### 批量脚本 https://github.com/jasonrale/multiLongInscriber
