@@ -22,4 +22,4 @@
 ##### 推特：https://twitter.com/mnlonn
 ##### 白皮书：https://moonlong.gitbook.io/long
 ###### 每次铸币操作都会自动增加流动性并销毁 LP，没有储备任何代币，因此合约只是一个平台，没有人可以控制 BNB 和代币的数量。代币最初是不可转让的，一旦刻录完成，代币转让将被启用。
-###### 批量脚本 https://github.com/jasonrale/multiLongInscriber
+### 批量脚本 https://github.com/jasonrale/multiLongInscriber
