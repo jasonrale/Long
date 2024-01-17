@@ -1,3 +1,4 @@
+**Read this in other languages: [中文](README.cn.md)**  
 # The first FairLaunch standard on the EVM, inspired by the inscription.
 In recent times, inscriptions have flooded the blockchain world.This trend originated from BTC and landed on the EVM chain. What is the inscription? The inscription is a transitional product of BTC that lacks smart contracts and the ability to issue coins. Some people may discover the string engraved by 'ordi' in the data: {"p":"brc-20","op":"mint","tick":"ordi","amt":"1000"}. What does this sentence represent? It represents the minting of 1000 tokens with the name 'ordi' following the "brc-20" standard.  
   
