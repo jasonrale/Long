@@ -9,18 +9,3 @@ But, the EVM (Ethereum Virtual Machine) supports smart contracts. So, if it's ju
 According to the first principles, I have identified the essence of inscriptions and understood why people appreciate them. Is there a better practice? Yes! We all know that Tokens are the ultimate form of inscriptions. Therefore, by combining the characteristics of inscriptions with ERC20 tokens, we can create a new way of token distribution. Similar to the process of engraving inscriptions, this approach allows us to achieve fairness and decentralization, just like inscriptions. Additionally, we can benefit from the well-established infrastructure on the EVM (Ethereum Virtual Machine) and have valuable initial liquidity. This will be a great innovation!  
 
 ### Fair1.0 on BNB Chain. $Fair: 0xb2ee388ba25e1db122d0f12ecc9d5ca0e045a95d
-Live on opBNB Chain.  
-##### 🐉Go long, don’t go short!!!🐉
-##### 🐉Go Long To The Moon!!!🐉
-##### Token Name: LONG
-##### Token Contract: 0xe36421615E1cE70F8a6b9356d92A96C748560772 (Open Source)
-##### LongInscriber Contract: 0x658c3941eae10398da5456951cdaf795984d106b (Open Source)
-##### TotalSupply: 21000000 (12500000 mintable and 8500000 LP)
-##### Each liquidity addition: 0.00025 BNB.
-##### Transfer 0.00025BNB to LongInscriber Contract: 0x658c3941eae10398da5456951cdaf795984d106b, you can mint 1 $Long. If the inscribe fails, please adjust the Gas Limit to 60,000 or above.
-##### Every 2500 inscribe, the contract will automatically add liquidity and destroy LP tokens. This process will be repeated a total of 5000 times.
-##### Telegram Group: https://t.me/+2VGp9p27JMhkMzRl
-##### Twitter: https://twitter.com/mnlonn
-##### WhitePaper: https://moonlong.gitbook.io/long
-###### Every mint operation automatically adds liquidity and burns LP, with no tokens held in team, so the contract is just a platform, and no one can control the amount of BNB and tokens. The tokens are initially non-transferable, and once the inscribe is complete, token transfers will be enabled.
-### Batch Script: https://github.com/jasonrale/LongInscriber
